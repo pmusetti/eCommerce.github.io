@@ -1,45 +1,67 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html, body, #root{
-    height: 100%;
+html,
+body,
+#root {
+  height: 100%;
 }
 
-#root{
-    display: flex;
-    flex-direction: column;
+#root {
+  display: flex;
+  flex-direction: column;
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
-$color-primary: rgb(18, 129, 129);
-$color-secondary: white;
-#header{
-    background-color: $color-primary;
-    color: $color-secondary;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 0 3px rgba(0,0,0,0.5);
-    padding: 0.5rem 1rem;
+$color-primary: rgb(255, 255, 255);
+$color-secondary: #f52f41;
+#header {
+  background-color: $color-primary;
+  color: $color-secondary;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
 }
-#main{
-    flex-grow: 1;
-    padding: 1rem;
+#main {
+  display: flex;
+  background-image: url("../backgroundFB-peya.jpg");
+  background-position: center;
+  background-size: cover;
+  flex-grow: 1;
+  padding: 1rem;
+  align-items: center;
+  //text-align: center;
+  font-size: 200%;
+  font-weight: bolder;
+  h2{
+    background-color: rgba(241, 241, 241, 0.616);
+    color: #333333;
+    margin: 0 auto;
+  }
 }
 
 #footer {
-    background-color: $color-primary;
+  background-color: $color-secondary;
+  color: $color-primary;
+}
+
+#navbar {
+  justify-content: space-between;
+  a {
     color: $color-secondary;
+    text-decoration: none;
+    padding: 1rem;
+  }
 }

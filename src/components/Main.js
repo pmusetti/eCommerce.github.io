@@ -5,7 +5,7 @@ function Main() {
     return (
         <div id='main'>
             <ItemListContainer
-                greeting="Bienvenido!" />
+                greeting="¡Bienvenido a PedilosYa!" />
         </div>
     )
 }

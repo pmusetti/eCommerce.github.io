@@ -4,7 +4,7 @@ import NavBar from './NavBar'
 function Header() {
   return (
     <div id='header'>
-        <h1>SIGNA</h1>
+        <h1>PedilosYA</h1>
         <NavBar/>
         
     </div>
