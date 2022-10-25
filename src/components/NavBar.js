@@ -21,9 +21,11 @@ function NavBar() {
         />
       </a>
       <button
+      className='btn-primary'
       onClick={addItem}>Add +
       </button>
       <button
+      className='btn-secondary'
       onClick={subItem}>Sub -</button>
     </div>
   )

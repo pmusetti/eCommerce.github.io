@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,600&display=swap');
 
 * {
   margin: 0;
@@ -42,18 +43,20 @@ $color-secondary: #f52f41;
   flex-grow: 1;
   padding: 1rem;
   align-items: center;
-  //text-align: center;
   font-size: 200%;
   font-weight: bolder;
-  h2{
+  h2 {
+    font-family: Mulish;
     background-color: rgba(241, 241, 241, 0.616);
     color: #333333;
     margin: 0 auto;
-    border-radius: 25px;
+    padding: 0 1.5rem;
+    border-radius: 50px;
   }
 }
 
 #footer {
+  font-family: Mulish;
   background-color: $color-secondary;
   color: $color-primary;
 }
@@ -61,11 +64,33 @@ $color-secondary: #f52f41;
 #navbar {
   justify-content: space-between;
   a {
+    font-family: Mulish;
     color: $color-secondary;
     text-decoration: none;
     padding: 1rem;
-    font-size: large;
-    font-weight:900;
+    font-size: larger;
+    font-weight: bolder;
+    &:hover{
+      box-shadow: 0 6px 0 $color-secondary;
+    }
   }
-  
+}
+
+.btn-primary {
+  background-color: $color-secondary;
+  color: $color-primary;
+  padding: 0.25rem;
+  border-radius: 10px;
+  border: solid 1px $color-secondary;
+}
+.btn-secondary {
+  @extend .btn-primary;
+  background-color: $color-primary;
+  color: $color-secondary;
+}
+.btn-secondary, .btn-primary{
+  &:hover{
+    background-color: #fc6a6a;
+    color: $color-primary;
+  }
 }
