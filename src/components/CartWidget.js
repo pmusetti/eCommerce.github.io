@@ -1,13 +1,19 @@
 import React from 'react'
 
-function CartWidget() {
-    return (
+function CartWidget({cartItems}) {
+ 
 
-        <span class="material-symbols-outlined">
-        shopping_cart
-        </span>
-        
-        
+    return (
+        <>
+            <span class="material-symbols-outlined">
+                shopping_cart
+            </span>
+            <span>{cartItems}</span>
+            
+        </>
+
+
+
     )
 }
 

@@ -34,9 +34,9 @@ $color-secondary: #f52f41;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
   padding: 0.5rem 1rem;
 }
-#main {
+#home {
   display: flex;
-  background-image: url("../backgroundFB-peya.jpg");
+  background-image: url("../public/backgroundFB-peya.jpg");
   background-position: center;
   background-size: cover;
   flex-grow: 1;
@@ -49,6 +49,7 @@ $color-secondary: #f52f41;
     background-color: rgba(241, 241, 241, 0.616);
     color: #333333;
     margin: 0 auto;
+    border-radius: 25px;
   }
 }
 
@@ -63,5 +64,8 @@ $color-secondary: #f52f41;
     color: $color-secondary;
     text-decoration: none;
     padding: 1rem;
+    font-size: large;
+    font-weight:900;
   }
+  
 }
