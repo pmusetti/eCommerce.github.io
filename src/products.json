@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "category": "restaurante",
+    "title": "Mega Hamburguesa",
+    "description": "Hamburguesa de la casa, triple queso, bacon, huevo, tomate, pepino y mucha mostaza",
+    "price": 1990,
+    "urlPicture": "../images/products/hamburguesa.webp"
+  },
+  {
+    "id": 2,
+    "category": "restaurante",
+    "title": "Empanadas x 12",
+    "description": "Empanadas con masa de hojaldre, fritas o al horno. Criolla, carne, pollo, pollo champi, J&Q o calabresa! ",
+    "price": 2990,
+    "urlPicture": "../images/products/empanadas.webp"
+  },
+  {
+    "id": 3,
+    "category": "restaurante",
+    "title": "Pizza familiar",
+    "description": "Piza 50cm, muzzarella, y gustos a eleccion!",
+    "price": 3990,
+    "urlPicture": "../images/products/pizza.webp"
+  },
+  {
+    "id": 4,
+    "category": "restaurante",
+    "title": "Chivito al pan",
+    "description": "Chivito al pan o al plato. Doble carne, jamon, queso, huevo, panceta, cebolla caramelizada, lechuga, tomate y salsa de la casa. Acompañalo con rusa o fritas!",
+    "price": 3990,
+    "urlPicture": "../images/products/chivito.webp"
+  },
+  {
+    "id": 5,
+    "category": "restaurante",
+    "title": "Gramajo para 2",
+    "description": "Gramajo completo para 2, con huevo, jamon, panceta, queso fundido y un toque de oregano.",
+    "price": 3990,
+    "urlPicture": "../images/products/gramajo.webp"
+  },
+  {
+    "id": 6,
+    "category": "restaurante",
+    "title": "Tabla de sushi",
+    "description": "15 piezas (Makis, uramakis & niguiris de salmon, langostinos y veggie)",
+    "price": 3990,
+    "urlPicture": "../images/products/sushi.webp"
+  },
+  {
+    "id": 7,
+    "category": "supermercado",
+    "title": "Bananas Ecuador",
+    "description": "Bananas importadas Ecuador x kilo",
+    "price": 350,
+    "urlPicture": "../images/products/bananas.webp"
+  },
+  {
+    "id": 8,
+    "category": "supermercado",
+    "title": "CocaCola 3lts",
+    "description": "Refresco CocaCola sin azucar 3lts descartable",
+    "price": 5990,
+    "urlPicture": "../images/products/cocacola.webp"
+  },
+  {
+    "id": 9,
+    "category": "supermercado",
+    "title": "Jamon cocido",
+    "description": "Jamon cocido Cativelli x 100g",
+    "price": 170,
+    "urlPicture": "../images/products/jamon.webp"
+  },
+  {
+    "id": 10,
+    "category": "supermercado",
+    "title": "Harian 0000",
+    "description": "Harina tipo 0000 Molino Cañuelas 1kg",
+    "price": 350,
+    "urlPicture": "../images/products/harina.webp"
+  },
+  {
+    "id": 11,
+    "category": "supermercado",
+    "title": "Huevos colorados",
+    "description": "Huevos colorados jumbo de campo x 12 unidades",
+    "price": 5990,
+    "urlPicture": "../images/products/huevos.png"
+  },
+  {
+    "id": 12,
+    "category": "supermercado",
+    "title": "Aceite de girasol",
+    "description": "Aceite de girasol OPTIMO 900 ml",
+    "price": 170,
+    "urlPicture": "../images/products/aceite.webp"
+  },
+  {
+    "id": 13,
+    "category": "farmacia",
+    "title": "Desodorante Dove",
+    "description": "Desodonarnte aerosol Dove Original mujer",
+    "price": 370,
+    "urlPicture": "../images/products/desodorante.jpg"
+  },
+  {
+    "id": 14,
+    "category": "farmacia",
+    "title": "Antigripal Flodigrip",
+    "description": "Antigripal Flodigrip x 10 comprimidos",
+    "price": 2090,
+    "urlPicture": "../images/products/flodigrip.jpg"
+  },
+  {
+    "id": 15,
+    "category": "farmacia",
+    "title": "Cicatricure Antiage",
+    "description": "Cream Cicatricure gel antiage 50g",
+    "price": 1750,
+    "urlPicture": "../images/products/cicatricure.webp"
+  },
+  {
+    "id": 16,
+    "category": "farmacia",
+    "title": "Loratadina 10mg x 30 comprimidos",
+    "description": "Loratadina Ion 10mg x 30 comprimidos",
+    "price": 370,
+    "urlPicture": "../images/products/loratadina.jpg"
+  },
+  {
+    "id": 17,
+    "category": "farmacia",
+    "title": "Pañales Pampers Confort Sec",
+    "description": "Pañales Pampers Confort Sec talle M x 60 ",
+    "price": 2090,
+    "urlPicture": "../images/products/pampers.jpg"
+  },
+  {
+    "id": 18,
+    "category": "farmacia",
+    "title": "Protector solar Dermaglos",
+    "description": "Protector Solar Dermaglos spray spf 40 x 170ml.",
+    "price": 1750,
+    "urlPicture": "../images/products/protector.jpg"
+  }
+]

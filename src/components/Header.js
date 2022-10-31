@@ -1,12 +1,15 @@
-import React from 'react'
-import NavBar from './NavBar'
+import React from 'react';
+import NavBar from './NavBar';
+import { Link } from "react-router-dom";
+
 
 function Header() {
   return (
     <div id='header'>
-        <h1>PedilosYA</h1>
-        <NavBar/>
-        
+      <Link to="/" id='logo'>
+        <h1 >PedilosYA</h1>
+      </Link>
+      <NavBar />
     </div>
   )
 }

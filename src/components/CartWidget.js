@@ -5,7 +5,7 @@ function CartWidget({cartItems}) {
 
     return (
         <>
-            <span class="material-symbols-outlined">
+            <span className="material-symbols-outlined">
                 shopping_cart
             </span>
             <span>{cartItems}</span>

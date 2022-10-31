@@ -1,32 +1,19 @@
 import React, {useState} from 'react'
 import CartWidget from './CartWidget'
+import { NavLink } from "react-router-dom"
 
 
 function NavBar() {
- const [cartItems, setCartItems] = useState(0)
- let addItem = () => {
-  setCartItems(cartItems + 1)
- }
- let subItem = () => {
-  setCartItems(cartItems - 1)
- }
   return (
     <div id='navbar'>
-      <a href='#'>RESTÓ</a>
-      <a href='#'>MARKET</a>
-      <a href='#'>FARMA</a>
-      <a href="#">
+      <NavLink to='/category/restaurante'>RESTAURANTE</NavLink>
+      <NavLink to='/category/supermercado'>SUPERMERCADO</NavLink>
+      <NavLink to='/category/farmacia'>FARMACIA</NavLink>
+      <NavLink to="carrito">
         <CartWidget
-        cartItems={cartItems}
+        cartItems={0}
         />
-      </a>
-      <button
-      className='btn-primary'
-      onClick={addItem}>Add +
-      </button>
-      <button
-      className='btn-secondary'
-      onClick={subItem}>Sub -</button>
+      </NavLink>
     </div>
   )
 }
