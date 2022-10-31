@@ -12,7 +12,7 @@ function Main() {
                 {/* Todos los productos */}
                 <Route path='/' element={<ItemListContainer greeting="Todos nuestros productos" />}/>
                 {/* Producto por categoria pasada por parametro en URL */}
-                <Route path='category/:categoryId' element={<ItemListContainer greeting="Hoy no se cocina, pedilo y YA!" />}/>
+                <Route path='category/:categoryId' element={<ItemListContainer greeting="" />}/>
                 {/* Detalle del producto elegido segun Id pasada por parametro en URL */}
                 <Route path='item/:elementId' element={<ItemDetailsContainer/>}/>
                 {/* Carrito */}

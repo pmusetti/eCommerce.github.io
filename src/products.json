@@ -4,7 +4,7 @@
     "category": "restaurante",
     "title": "Mega Hamburguesa",
     "description": "Hamburguesa de la casa, triple queso, bacon, huevo, tomate, pepino y mucha mostaza",
-    "price": 1990,
+    "price": 360,
     "urlPicture": "../images/products/hamburguesa.webp"
   },
   {
@@ -12,7 +12,7 @@
     "category": "restaurante",
     "title": "Empanadas x 12",
     "description": "Empanadas con masa de hojaldre, fritas o al horno. Criolla, carne, pollo, pollo champi, J&Q o calabresa! ",
-    "price": 2990,
+    "price": 750,
     "urlPicture": "../images/products/empanadas.webp"
   },
   {
@@ -20,7 +20,7 @@
     "category": "restaurante",
     "title": "Pizza familiar",
     "description": "Piza 50cm, muzzarella, y gustos a eleccion!",
-    "price": 3990,
+    "price": 540,
     "urlPicture": "../images/products/pizza.webp"
   },
   {
@@ -28,7 +28,7 @@
     "category": "restaurante",
     "title": "Chivito al pan",
     "description": "Chivito al pan o al plato. Doble carne, jamon, queso, huevo, panceta, cebolla caramelizada, lechuga, tomate y salsa de la casa. Acompañalo con rusa o fritas!",
-    "price": 3990,
+    "price": 470,
     "urlPicture": "../images/products/chivito.webp"
   },
   {
@@ -36,7 +36,7 @@
     "category": "restaurante",
     "title": "Gramajo para 2",
     "description": "Gramajo completo para 2, con huevo, jamon, panceta, queso fundido y un toque de oregano.",
-    "price": 3990,
+    "price": 610,
     "urlPicture": "../images/products/gramajo.webp"
   },
   {
@@ -44,7 +44,7 @@
     "category": "restaurante",
     "title": "Tabla de sushi",
     "description": "15 piezas (Makis, uramakis & niguiris de salmon, langostinos y veggie)",
-    "price": 3990,
+    "price": 620,
     "urlPicture": "../images/products/sushi.webp"
   },
   {
@@ -52,7 +52,7 @@
     "category": "supermercado",
     "title": "Bananas Ecuador",
     "description": "Bananas importadas Ecuador x kilo",
-    "price": 350,
+    "price": 195,
     "urlPicture": "../images/products/bananas.webp"
   },
   {
@@ -60,7 +60,7 @@
     "category": "supermercado",
     "title": "CocaCola 3lts",
     "description": "Refresco CocaCola sin azucar 3lts descartable",
-    "price": 5990,
+    "price": 190,
     "urlPicture": "../images/products/cocacola.webp"
   },
   {
@@ -68,7 +68,7 @@
     "category": "supermercado",
     "title": "Jamon cocido",
     "description": "Jamon cocido Cativelli x 100g",
-    "price": 170,
+    "price": 90,
     "urlPicture": "../images/products/jamon.webp"
   },
   {
@@ -76,7 +76,7 @@
     "category": "supermercado",
     "title": "Harian 0000",
     "description": "Harina tipo 0000 Molino Cañuelas 1kg",
-    "price": 350,
+    "price": 60,
     "urlPicture": "../images/products/harina.webp"
   },
   {
@@ -84,7 +84,7 @@
     "category": "supermercado",
     "title": "Huevos colorados",
     "description": "Huevos colorados jumbo de campo x 12 unidades",
-    "price": 5990,
+    "price": 150,
     "urlPicture": "../images/products/huevos.png"
   },
   {
@@ -92,7 +92,7 @@
     "category": "supermercado",
     "title": "Aceite de girasol",
     "description": "Aceite de girasol OPTIMO 900 ml",
-    "price": 170,
+    "price": 140,
     "urlPicture": "../images/products/aceite.webp"
   },
   {
@@ -100,7 +100,7 @@
     "category": "farmacia",
     "title": "Desodorante Dove",
     "description": "Desodonarnte aerosol Dove Original mujer",
-    "price": 370,
+    "price": 270,
     "urlPicture": "../images/products/desodorante.jpg"
   },
   {
@@ -108,7 +108,7 @@
     "category": "farmacia",
     "title": "Antigripal Flodigrip",
     "description": "Antigripal Flodigrip x 10 comprimidos",
-    "price": 2090,
+    "price": 185,
     "urlPicture": "../images/products/flodigrip.jpg"
   },
   {

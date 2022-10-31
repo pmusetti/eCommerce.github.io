@@ -4,7 +4,8 @@
 
 $color-primary: rgb(255, 255, 255);
 $color-secondary: #f52f41;
-$color-btn: rgb(0, 63, 146);
+$color-details-btn: #f52f41;
+$color-buy-btn: rgb(73, 189, 7);
 
 * {
   margin: 0;
@@ -94,7 +95,6 @@ body,
   background-color: $color-secondary;
   color: $color-primary;
   padding: 0.25rem;
-  border-radius: 10px;
   border: solid 1px $color-secondary;
 }
 .btn-secondary {
@@ -193,14 +193,12 @@ body,
   border: none;
   margin: 10% auto;
   padding: 1rem 0;
-  border-radius: 5px;
-  background-color: $color-btn;
+  background-color: $color-details-btn;
   color: $color-primary;
   cursor: pointer;
 }
 .card__btn__container{
   text-align: center;
-  //height: 2rem;
 }
 
 .details__main__container{
@@ -233,13 +231,12 @@ body,
   padding: 2rem;
 }
 .details__btn__container{
-
   padding: 2rem;
 }
 .details__btn{
   border-radius: 5px;
   border: none;
-  background-color: #0050c9;
+  background-color: $color-buy-btn;
   color: white;
   padding: 1rem;
   width: 80%;
