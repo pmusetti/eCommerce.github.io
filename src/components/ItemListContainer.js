@@ -12,10 +12,12 @@ function ItemListContainer({ greeting }) {
   const {categoryId} = useParams() 
 
   useEffect(() => {
-
+    
       if(categoryId){
+        console.log("legnth: ", items.length)
           getProductByCategory(categoryId) 
           .then(res => {
+            console.log(typeof(res))
               setItems(res)
           })
           .catch(err => {
@@ -23,8 +25,10 @@ function ItemListContainer({ greeting }) {
           })
 
       }else{
+        
           getProducts()
           .then((respuesta) => {
+            console.log(typeof(respuesta))
               setItems(respuesta)
           })
           .catch((err) => {

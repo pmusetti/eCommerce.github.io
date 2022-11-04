@@ -178,11 +178,13 @@ body,
 }
 .card__regularPrice{
   text-decoration: line-through;
+  font-size: 220%;
+  padding: 1rem 0;
 }
 .card__discountPrice{
   background-color: green;
   color: white;
-  font-size: 200%;
+  font-size: 300%;
   border-radius: 5px;
 }
 .card__text__container{
@@ -210,28 +212,24 @@ body,
   border-radius: 5px;
   display: flex;
   justify-content: center;
-  width: 60%;
+  width: 50%;
 }
 .details__img__container{
   width: 50%;
 }
 .details__side__container{
+  padding: 2rem;
   width: 50%;
 }
 .details__title{
   font-size: 300%;
-  padding: 2rem;
 }
-.details__description{
-  padding: 2rem;
-  font-size: 200%;
-}
+
 .details__price{
   font-size: 350%;
-  padding: 2rem;
 }
 .details__btn__container{
-  padding: 2rem;
+  display: flex;
 }
 .details__btn{
   border-radius: 5px;
@@ -239,5 +237,29 @@ body,
   background-color: $color-buy-btn;
   color: white;
   padding: 1rem;
-  width: 80%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.counter__container{
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+  width: 100%;
+  font-size: 200%;
+  margin: auto;
+}
+.item__count{
+  border-radius: 5px;
+  width: 30%;
+  border: none;
+  background-color: rgb(0, 89, 255);
+  color: white;
+  font-size: 100%;
+  padding: 1rem 0;
+}
+.item__count__output{
+  margin: auto;
+  width: 30%;
+  text-align: center;
 }

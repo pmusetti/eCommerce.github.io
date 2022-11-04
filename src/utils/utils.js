@@ -1,9 +1,4 @@
-import productList from '../products.json';
-let products = []
-
-products = productList.map((item) => {
-    return item
-})
+import products from '../products.json';
 
 export const getProducts = () => {
     let getAllProducts = new Promise((res) => {
@@ -14,8 +9,6 @@ export const getProducts = () => {
     return getAllProducts
 
 }
-
-
 
 export const getProductByCategory = (category) => {
     let getByCategory = new Promise((res) => {
@@ -29,7 +22,6 @@ export const getProductByCategory = (category) => {
 
     return getByCategory
 }
-
 
 export const getProductById = (productId) => {
     let getById = new Promise((res) => {

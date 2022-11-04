@@ -1,6 +1,29 @@
-import React from 'react'
+import { React, useState }from 'react'
+import ItemCount from './ItemCount'
 
 function ItemDetails({ item }) {
+
+    let regularPrice = item.price;
+    let price =  item.price * 0.8;
+
+    const [count, setCount] = useState(0);
+
+    function addItem(){
+        
+        setCount( count + 1);
+    }
+
+    function subItem() {
+        
+        if(count > 0){
+
+            setCount( count - 1);
+        }
+    }
+
+
+
+
     return (
         <>
             <div className='details__main__container'>
@@ -13,8 +36,16 @@ function ItemDetails({ item }) {
                         <p className='details__description'>{item.description}</p>
                     </div>
                     <div className='details__price__container'>
-                        <span className='details__price'>${item.price}</span>
+                        <span className='card__regularPrice'> ${regularPrice}</span>
                     </div>
+                    <div className='details__price__container'>
+
+                        <span className='card__discountPrice'>${price}</span>
+                    </div>
+                    <ItemCount 
+                    addItem={addItem}
+                    subItem={subItem}
+                    count = {count}/>
                     <div className="details__btn__container">
                     <button className='details__btn'>COMPRAR</button>
                     </div>

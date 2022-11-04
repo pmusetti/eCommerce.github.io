@@ -13,6 +13,7 @@ function ItemDetailsContainer() {
     useEffect(() => {
         getProductById(elementId)
             .then(res => {
+                console.log(typeof(res))
                 setItems(res)
             })
             .catch(err => {
@@ -22,7 +23,7 @@ function ItemDetailsContainer() {
 
     return (
         <>
-            {item.length == 0 ? <p>Cargando...</p> : <ItemDetails item={item} /> }
+            {item.length == 0 ? <p>Cargando...</p> : <ItemDetails key={item.id} item={item} /> }
         </>
 
     )
