@@ -21,9 +21,6 @@ function ItemDetails({ item }) {
         }
     }
 
-
-
-
     return (
         <>
             <div className='details__main__container'>
@@ -39,7 +36,6 @@ function ItemDetails({ item }) {
                         <span className='card__regularPrice'> ${regularPrice}</span>
                     </div>
                     <div className='details__price__container'>
-
                         <span className='card__discountPrice'>${price}</span>
                     </div>
                     <ItemCount 
