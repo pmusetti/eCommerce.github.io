@@ -1,14 +1,16 @@
-import React from 'react'
+import { React, useContext } from 'react'
+import { contexto } from '../components/CustomProvider'
 
-function CartWidget({cartItems}) {
+function CartWidget() {
  
+    const resultado = useContext(contexto)
 
     return (
         <>
             <span className="material-symbols-outlined">
                 shopping_cart
             </span>
-            <span>{cartItems}</span>
+            <span>{resultado.cartItems}</span>
             
         </>
 

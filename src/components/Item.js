@@ -1,10 +1,14 @@
 import React from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+
 
 function Item({ item }) {
     const regularPrice = item.price;
     const discountPrice = regularPrice * 0.8;
     const urlDetail = "../item/" + item.id
+
+
+
     return (
         <div className='cardContainer'>
             <div className='card__img__container'>
@@ -22,7 +26,7 @@ function Item({ item }) {
             <div className='card__btn__container'>
                 <Link to={urlDetail} >
                     <button className='card__btn'>
-                        Detalles
+                        Ver detalles
                     </button>
                 </Link>
             </div>

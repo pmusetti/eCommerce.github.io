@@ -8,13 +8,13 @@ function IconsMenu() {
   return (
     <div id='menuIcons'>
     <Link to="/category/resto/restaurante">
-      <img src={IconoRestaurante} className="categoryIcon"></img>
+      <img src={IconoRestaurante} className="categoryIcon" alt='Icono restaurante'></img>
     </Link>
     <Link to="/category/market/supermercado">
-      <img src={IconoSupermercado} className="categoryIcon"></img>
+      <img src={IconoSupermercado} className="categoryIcon" alt='Icono supermercado'></img>
     </Link>
     <Link to="/category/farma/farmacia">
-      <img src={IconoFarmacia} className="categoryIcon"></img>
+      <img src={IconoFarmacia} className="categoryIcon" alt='Icono farmacia'></img>
     </Link></div>
   )
 }

@@ -1,19 +1,22 @@
-import React from "react";
+import React from 'react'
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 import { BrowserRouter } from "react-router-dom"
-
-
 import "./style.scss"
+import CustomProvider from './components/CustomProvider';
+
 
 function App() {
+
   return (
     <>
-    <BrowserRouter>
-      <Header />
-      <Main />
-    </BrowserRouter>
+      <CustomProvider>
+        <BrowserRouter>
+          <Header />
+          <Main />
+        </BrowserRouter>
+      </CustomProvider>
       <Footer />
     </>
   );

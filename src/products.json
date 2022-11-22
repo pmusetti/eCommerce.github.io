@@ -5,7 +5,8 @@
     "title": "Mega Hamburguesa",
     "description": "Hamburguesa de la casa, triple queso, bacon, huevo, tomate, pepino y mucha mostaza",
     "price": 360,
-    "urlPicture": "../images/products/hamburguesa.webp"
+    "urlPicture": "../images/products/hamburguesa.webp",
+    "stock": 10
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "title": "Empanadas x 12",
     "description": "Empanadas con masa de hojaldre, fritas o al horno. Criolla, carne, pollo, pollo champi, J&Q o calabresa! ",
     "price": 750,
-    "urlPicture": "../images/products/empanadas.webp"
+    "urlPicture": "../images/products/empanadas.webp",
+    "stock": 10
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "title": "Pizza familiar",
     "description": "Piza 50cm, muzzarella, y gustos a eleccion!",
     "price": 540,
-    "urlPicture": "../images/products/pizza.webp"
+    "urlPicture": "../images/products/pizza.webp",
+    "stock": 10
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "title": "Chivito al pan",
     "description": "Chivito al pan o al plato. Doble carne, jamon, queso, huevo, panceta, cebolla caramelizada, lechuga, tomate y salsa de la casa. Acompañalo con rusa o fritas!",
     "price": 470,
-    "urlPicture": "../images/products/chivito.webp"
+    "urlPicture": "../images/products/chivito.webp",
+    "stock": 10
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "title": "Gramajo para 2",
     "description": "Gramajo completo para 2, con huevo, jamon, panceta, queso fundido y un toque de oregano.",
     "price": 610,
-    "urlPicture": "../images/products/gramajo.webp"
+    "urlPicture": "../images/products/gramajo.webp",
+    "stock": 10
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "title": "Tabla de sushi",
     "description": "15 piezas (Makis, uramakis & niguiris de salmon, langostinos y veggie)",
     "price": 620,
-    "urlPicture": "../images/products/sushi.webp"
+    "urlPicture": "../images/products/sushi.webp",
+    "stock": 10
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "title": "Bananas Ecuador",
     "description": "Bananas importadas Ecuador x kilo",
     "price": 195,
-    "urlPicture": "../images/products/bananas.webp"
+    "urlPicture": "../images/products/bananas.webp",
+    "stock": 10
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "title": "CocaCola 3lts",
     "description": "Refresco CocaCola sin azucar 3lts descartable",
     "price": 190,
-    "urlPicture": "../images/products/cocacola.webp"
+    "urlPicture": "../images/products/cocacola.webp",
+    "stock": 10
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "title": "Jamon cocido",
     "description": "Jamon cocido Cativelli x 100g",
     "price": 90,
-    "urlPicture": "../images/products/jamon.webp"
+    "urlPicture": "../images/products/jamon.webp",
+    "stock": 10
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "title": "Harian 0000",
     "description": "Harina tipo 0000 Molino Cañuelas 1kg",
     "price": 60,
-    "urlPicture": "../images/products/harina.webp"
+    "urlPicture": "../images/products/harina.webp",
+    "stock": 10
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@
     "title": "Huevos colorados",
     "description": "Huevos colorados jumbo de campo x 12 unidades",
     "price": 150,
-    "urlPicture": "../images/products/huevos.png"
+    "urlPicture": "../images/products/huevos.png",
+    "stock": 10
   },
   {
     "id": 12,
@@ -93,7 +104,8 @@
     "title": "Aceite de girasol",
     "description": "Aceite de girasol OPTIMO 900 ml",
     "price": 140,
-    "urlPicture": "../images/products/aceite.webp"
+    "urlPicture": "../images/products/aceite.webp",
+    "stock": 10
   },
   {
     "id": 13,
@@ -101,7 +113,8 @@
     "title": "Desodorante Dove",
     "description": "Desodonarnte aerosol Dove Original mujer",
     "price": 270,
-    "urlPicture": "../images/products/desodorante.jpg"
+    "urlPicture": "../images/products/desodorante.jpg",
+    "stock": 10
   },
   {
     "id": 14,
@@ -109,7 +122,8 @@
     "title": "Antigripal Flodigrip",
     "description": "Antigripal Flodigrip x 10 comprimidos",
     "price": 185,
-    "urlPicture": "../images/products/flodigrip.jpg"
+    "urlPicture": "../images/products/flodigrip.jpg",
+    "stock": 10
   },
   {
     "id": 15,
@@ -117,7 +131,8 @@
     "title": "Cicatricure Antiage",
     "description": "Cream Cicatricure gel antiage 50g",
     "price": 1750,
-    "urlPicture": "../images/products/cicatricure.webp"
+    "urlPicture": "../images/products/cicatricure.webp",
+    "stock": 10
   },
   {
     "id": 16,
@@ -125,7 +140,8 @@
     "title": "Loratadina 10mg x 30 comprimidos",
     "description": "Loratadina Ion 10mg x 30 comprimidos",
     "price": 370,
-    "urlPicture": "../images/products/loratadina.jpg"
+    "urlPicture": "../images/products/loratadina.jpg",
+    "stock": 10
   },
   {
     "id": 17,
@@ -133,7 +149,8 @@
     "title": "Pañales Pampers Confort Sec",
     "description": "Pañales Pampers Confort Sec talle M x 60 ",
     "price": 2090,
-    "urlPicture": "../images/products/pampers.jpg"
+    "urlPicture": "../images/products/pampers.jpg",
+    "stock": 10
   },
   {
     "id": 18,
@@ -141,6 +158,7 @@
     "title": "Protector solar Dermaglos",
     "description": "Protector Solar Dermaglos spray spf 40 x 170ml.",
     "price": 1750,
-    "urlPicture": "../images/products/protector.jpg"
+    "urlPicture": "../images/products/protector.jpg",
+    "stock": 10
   }
 ]

@@ -1,33 +1,14 @@
 import products from '../products.json';
 
-export const getProducts = () => {
-    let getAllProducts = new Promise((res) => {
-        setTimeout(() => {
-            res(products)
-        }, 500)
-    })
-    return getAllProducts
-
+const generatePromise = (operation, time = 500) => {
+    return new Promise((res, rej) => {
+        res(operation)
+    }, time)
 }
 
-export const getProductByCategory = (category) => {
-    let getByCategory = new Promise((res) => {
-        setTimeout(() => {
-            res(products.filter((item) => {
-                return item.category == category
-            }
-            ))
-        }, 500)
-    })
+export const getProducts = () => generatePromise(products) 
 
-    return getByCategory
-}
+export const getProductById = (productId) => generatePromise(products.find(item => item.id == productId))
 
-export const getProductById = (productId) => {
-    let getById = new Promise((res) => {
-        setTimeout(() => {
-            res(products.find(item => item.id == productId))
-        }, 500)
-    })
-    return getById
-}
+export const getProductByCategory = (category) => generatePromise(products.filter(item => item.category == category))
+    

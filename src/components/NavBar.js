@@ -1,18 +1,23 @@
-import React, {useState} from 'react'
+import React from 'react'
 import CartWidget from './CartWidget'
 import { NavLink } from "react-router-dom"
+import products from '../products.json'
 
+let categories = products.map(item => item.category)
+let uniqueCategories = [...new Set(categories)]
 
 function NavBar() {
   return (
     <div id='navbar'>
-      <NavLink to='/category/restaurante'>RESTAURANTE</NavLink>
-      <NavLink to='/category/supermercado'>SUPERMERCADO</NavLink>
-      <NavLink to='/category/farmacia'>FARMACIA</NavLink>
-      <NavLink to="carrito">
-        <CartWidget
-        cartItems={0}
-        />
+      {uniqueCategories.map((item) => {
+        return (
+          <NavLink to={`/category/${item}`} key={item}>
+            {item.toUpperCase()}
+          </NavLink>
+        )
+      })}
+      <NavLink to="cart">
+        <CartWidget />
       </NavLink>
     </div>
   )

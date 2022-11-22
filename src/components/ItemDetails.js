@@ -1,31 +1,24 @@
-import { React, useState }from 'react'
+import { React, useContext } from 'react'
 import ItemCount from './ItemCount'
+import { contexto } from '../components/CustomProvider'
 
+ 
 function ItemDetails({ item }) {
 
     let regularPrice = item.price;
-    let price =  item.price * 0.8;
+    let price = item.price * 0.8;
+    const valorDelContexto = useContext(contexto)
 
-    const [count, setCount] = useState(0);
+    const handleOnAdd= (cantidad) => {
+        valorDelContexto.agregarAlCarrito(item, cantidad)
 
-    function addItem(){
-        
-        setCount( count + 1);
-    }
-
-    function subItem() {
-        
-        if(count > 0){
-
-            setCount( count - 1);
-        }
     }
 
     return (
         <>
             <div className='details__main__container'>
                 <div className='details__img__container'>
-                    <img src={item.urlPicture} className="card__img"></img>
+                    <img src={item.urlPicture} className="card__img" alt='Imagne de producto'></img>
                 </div>
                 <div className='details__side__container'>
                     <div className='details__text__container'>
@@ -38,13 +31,11 @@ function ItemDetails({ item }) {
                     <div className='details__price__container'>
                         <span className='card__discountPrice'>${price}</span>
                     </div>
-                    <ItemCount 
-                    addItem={addItem}
-                    subItem={subItem}
-                    count = {count}/>
-                    <div className="details__btn__container">
-                    <button className='details__btn'>COMPRAR</button>
-                    </div>
+                    <ItemCount
+                        handleOnAdd={handleOnAdd}
+                        stock = {item.stock}
+                        />
+                    
                 </div>
 
             </div>

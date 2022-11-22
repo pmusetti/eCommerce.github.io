@@ -13,7 +13,6 @@ function ItemDetailsContainer() {
     useEffect(() => {
         getProductById(elementId)
             .then(res => {
-                console.log(typeof(res))
                 setItems(res)
             })
             .catch(err => {
