@@ -1,9 +1,16 @@
-import React from 'react'
+import { React, useContext } from 'react'
+import { contexto } from '../components/CustomProvider'
+import ItemCartList from './ItemCartList';
 
 function ItemCartContainer() {
-  return (
-    <h2 className='title'>Carrito</h2>
-  )
+  const context = useContext(contexto)
+  const products = context.products
+
+
+    return (
+      <ItemCartList products ={ products } />
+    );
+  
 }
 
 export default ItemCartContainer

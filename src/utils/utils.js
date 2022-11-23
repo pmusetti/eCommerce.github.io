@@ -1,10 +1,13 @@
 import products from '../products.json';
 
+
 const generatePromise = (operation, time = 500) => {
     return new Promise((res, rej) => {
         res(operation)
     }, time)
 }
+
+
 
 export const getProducts = () => generatePromise(products) 
 

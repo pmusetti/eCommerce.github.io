@@ -21,6 +21,7 @@ body,
 #root {
   display: flex;
   flex-direction: column;
+  --toastify-color-success: rgb(73, 189, 7);
 }
 
 #header {
@@ -263,3 +264,32 @@ body,
   width: 30%;
   text-align: center;
 }
+
+.cartItem--container{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 2rem;
+  align-items: center;
+  border: solid 1px red;
+  border-radius: 5px;
+  margin: 1rem ;
+}
+
+.cartItem--imgContainer{
+  width: 20%;
+}
+.cartItem--img{
+  width: 100%;
+}
+
+.cartDescription--container .cartQty--container .cartPrice--container{
+  width: 20%;
+  
+}
+.cartDescription--container{
+  width: 30%;
+
+}
+
+

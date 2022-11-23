@@ -10,7 +10,7 @@ function ItemDetails({ item }) {
     const valorDelContexto = useContext(contexto)
 
     const handleOnAdd= (cantidad) => {
-        valorDelContexto.agregarAlCarrito(item, cantidad)
+        valorDelContexto.handleCart(item, cantidad)
 
     }
 
@@ -34,6 +34,7 @@ function ItemDetails({ item }) {
                     <ItemCount
                         handleOnAdd={handleOnAdd}
                         stock = {item.stock}
+                        showAddBtn = {true}
                         />
                     
                 </div>

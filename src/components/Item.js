@@ -23,6 +23,7 @@ function Item({ item }) {
             <div className='card__text__container'>
                 <span className='card__discountPrice'> ${discountPrice} </span>
             </div>
+            <span>Stock: {item.stock}</span>
             <div className='card__btn__container'>
                 <Link to={urlDetail} >
                     <button className='card__btn'>

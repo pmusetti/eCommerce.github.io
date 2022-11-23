@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import { BrowserRouter } from "react-router-dom"
 import "./style.scss"
 import CustomProvider from './components/CustomProvider';
+import { ToastContainer, toast } from "react-toastify"
 
 
 function App() {
@@ -15,9 +16,10 @@ function App() {
         <BrowserRouter>
           <Header />
           <Main />
+          <Footer />
         </BrowserRouter>
+        <ToastContainer />
       </CustomProvider>
-      <Footer />
     </>
   );
 }
