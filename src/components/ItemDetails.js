@@ -4,7 +4,6 @@ import { contexto } from '../components/CustomProvider'
 
  
 function ItemDetails({ item }) {
-
     let regularPrice = item.price;
     let price = item.price * 0.8;
     const valorDelContexto = useContext(contexto)

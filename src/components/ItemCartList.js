@@ -1,13 +1,22 @@
-import React from 'react'
-import ItemCart from './ItemCart'
 
-function ItemCartList({products}) {
+import ItemCart from './ItemCart';
+import FormItem from './FormItem';
+
+function ItemCartList({ products, handleCheckout }) {
+
   return (
     <>
-    {
-    products.map((prod) => {return <ItemCart key={prod.id} product={prod}/>})
-    }
-    <button>Comprar</button>
+      <div className='mainCart--container'>
+
+        <div className='itemsCart--container'>
+          {
+            products.map((prod) => {
+              return <ItemCart key={prod.id} product={prod} />
+            })
+          }
+        </div>
+        <FormItem/>
+      </div>
     </>
   )
 }

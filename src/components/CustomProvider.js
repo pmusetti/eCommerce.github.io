@@ -8,19 +8,25 @@ function CustomProvider({ children }) {
 
   const [carrito, setCarrito] = useState([])
   const [total, setTotal] = useState(0)
+  const [checkout, setCheckout] = useState(false)
 
   const vaciarCarrito = () => {
     setCarrito([]);
     setTotal(0)
   }
 
-  const handleCart = (item, cantidad) => {
+  const getCarrito = () => {
+    const newCarrito = [...carrito]
+    vaciarCarrito()
+    return newCarrito
+  }
 
-    const itemFoundInCart = carrito.find(elem => elem === item)
-    let items = carrito
+  const handleCart = (item, cantidad) => {
+    let items = [...carrito]
+    const itemFoundInCart = items.find(elem => elem.id === item.id)
 
     if (itemFoundInCart) {
-      const index = items.indexOf(item)
+      const index = items.indexOf(itemFoundInCart)
       items[index].qty += cantidad;
       items[index].stock -= cantidad;
 
@@ -36,12 +42,19 @@ function CustomProvider({ children }) {
     
   }
 
+  const handleCheckout = () => {
+    const state = checkout
+    setCheckout(!state)
+  }
+
  
 
   let contextValue = {
     products: carrito,
     cartItems: total,
-    vaciarCarrito: vaciarCarrito,
+    checkout: checkout,
+    handleCheckout: handleCheckout,
+    getCarrito: getCarrito,
     handleCart: handleCart
   }
 

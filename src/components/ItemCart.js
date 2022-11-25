@@ -1,6 +1,7 @@
 import { React, useContext } from 'react'
 import ItemCount from "../components/ItemCount"
 import { contexto } from '../components/CustomProvider'
+import { db } from "../firebase"
 
 function ItemCart({product}) {
 
@@ -20,15 +21,15 @@ function ItemCart({product}) {
             <h2 className='cartTitle'>{product.title}</h2>
             <p>{product.description}</p>
         </div>
-        <div className='cartQty--container'>
-            cantidad: {product.qty}
-        </div>
         <div className='cartPrice--container'>
-            precio total: ${price}
-            <ItemCount 
+            <ItemCount
             handleOnAdd={handleOnAdd}
             stock={product.stock}
             showAddBtn={true}/>
+        </div>
+        <div className='cartQty--container'>
+            <h2 className='cartQty'>{product.qty} un</h2>
+            <h2 className='cartPrice'>$ {price}</h2>
         </div>
     </div>
   )

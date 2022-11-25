@@ -2,7 +2,7 @@ import React from 'react'
 
 function Cart() {
   return (
-    <div>Carrito</div>
+    <div>Pedido Confirmado, beso en la frente!</div>
   )
 }
 

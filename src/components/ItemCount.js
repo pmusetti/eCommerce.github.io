@@ -4,7 +4,6 @@ import { noStockNotify } from "../utils/notifications"
 
 function ItemCount({ handleOnAdd, stock, showAddBtn }) {
 
-
     const [count, setCount] = useState(1);
 
     const addItem = () => {

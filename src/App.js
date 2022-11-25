@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom"
 import "./style.scss"
 import CustomProvider from './components/CustomProvider';
 import { ToastContainer, toast } from "react-toastify"
+import { app } from "./firebase"
 
 
 function App() {
