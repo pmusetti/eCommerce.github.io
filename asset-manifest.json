@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/eCommerce.github.io/static/css/main.9aac1344.css",
-    "main.js": "/eCommerce.github.io/static/js/main.01a7cd06.js",
-    "static/media/backgroundFB.jpg": "/eCommerce.github.io/static/media/backgroundFB.6921b75bb68c45005998.jpg",
-    "index.html": "/eCommerce.github.io/index.html",
-    "main.9aac1344.css.map": "/eCommerce.github.io/static/css/main.9aac1344.css.map",
-    "main.01a7cd06.js.map": "/eCommerce.github.io/static/js/main.01a7cd06.js.map"
+    "main.css": "/static/css/main.c21f1957.css",
+    "main.js": "/static/js/main.e4dfa450.js",
+    "static/media/backgroundFB.jpg": "/static/media/backgroundFB.6921b75bb68c45005998.jpg",
+    "index.html": "/index.html",
+    "main.c21f1957.css.map": "/static/css/main.c21f1957.css.map",
+    "main.e4dfa450.js.map": "/static/js/main.e4dfa450.js.map"
   },
   "entrypoints": [
-    "static/css/main.9aac1344.css",
-    "static/js/main.01a7cd06.js"
+    "static/css/main.c21f1957.css",
+    "static/js/main.e4dfa450.js"
   ]
 }
