@@ -2,9 +2,8 @@ import React from 'react'
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import ItemDetails from './ItemDetails'
-import { getProductById } from "../utils/utils"
 import { db } from "../firebase"
-import { collection, where, query, getDocs, getDoc, doc, addDoc } from "firebase/firestore"
+import { collection, getDoc, doc} from "firebase/firestore"
 
 function ItemDetailsContainer() {
 

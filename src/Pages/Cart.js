@@ -1,8 +1,18 @@
-import React from 'react'
+import { React, useContext } from 'react'
+import { contexto } from '../components/CustomProvider';
+
+
 
 function Cart() {
+
+  const context = useContext(contexto)
+  const order = context.order
+ 
   return (
-    <div>Pedido Confirmado, beso en la frente!</div>
+    <div className='checkout--conatiner'>
+      <h2>Estamos preparando tu pedido!</h2>
+      <h4> Podes rastrear tu pedido con el siguiente codigo: <span>{order.id}</span></h4>
+    </div>
   )
 }
 

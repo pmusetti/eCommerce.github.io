@@ -7,17 +7,16 @@ const { Provider } = contexto;
 function CustomProvider({ children }) {
 
   const [carrito, setCarrito] = useState([])
-  const [total, setTotal] = useState(0)
-  const [checkout, setCheckout] = useState(false)
-
-  const vaciarCarrito = () => {
+  const [itemsInCart, setItemsInCart] = useState(0)
+  const [order, setOrder] = useState([]);
+  const deleteCart = () => {
     setCarrito([]);
-    setTotal(0)
+    setItemsInCart(0)
   }
 
   const getCarrito = () => {
     const newCarrito = [...carrito]
-    vaciarCarrito()
+    deleteCart()
     return newCarrito
   }
 
@@ -34,27 +33,36 @@ function CustomProvider({ children }) {
       item.qty = cantidad
       item.stock -= cantidad
       items.push(item)
-      
+
     }
     setCarrito(items)
-    setTotal(total + cantidad)
+    setItemsInCart(itemsInCart + cantidad)
     itemAddedNotify()
-    
+
   }
 
-  const handleCheckout = () => {
-    const state = checkout
-    setCheckout(!state)
-  }
+  const deleteItem = (item) => {
+    let totalInCart = 0
+    const newCarrito = carrito.filter((elem) => {
 
- 
+      if (elem.id !== item.id) {
+        totalInCart += elem.qty
+        return elem
+      }
+
+    })
+    setCarrito(newCarrito)
+    setItemsInCart(totalInCart)
+  }
 
   let contextValue = {
     products: carrito,
-    cartItems: total,
-    checkout: checkout,
-    handleCheckout: handleCheckout,
+    cartItems: itemsInCart,
+    order: order,
+    deleteItem: deleteItem,
+    setOrder: setOrder,
     getCarrito: getCarrito,
+    deleteCart: deleteCart,
     handleCart: handleCart
   }
 

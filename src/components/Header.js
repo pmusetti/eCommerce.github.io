@@ -7,7 +7,7 @@ function Header() {
   return (
     <div id='header'>
       <Link to="/" id='logo'>
-        <h1 >PedilosYA</h1>
+        <h1 >Delivery</h1>
       </Link>
       <NavBar />
     </div>

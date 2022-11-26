@@ -5,8 +5,8 @@ import Footer from "./components/Footer";
 import { BrowserRouter } from "react-router-dom"
 import "./style.scss"
 import CustomProvider from './components/CustomProvider';
-import { ToastContainer, toast } from "react-toastify"
-import { app } from "./firebase"
+import { ToastContainer } from "react-toastify"
+
 
 
 function App() {
