@@ -1,7 +1,7 @@
 import React from 'react';
 import ItemListContainer from "./ItemListContainer";
 import ItemCartContainer from './ItemCartContainer';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, NavLink } from "react-router-dom";
 import Cart from "../Pages/Cart";
 import ItemDetailsContainer from './ItemDetailsContainer';
 
@@ -14,7 +14,7 @@ function Main() {
                 <Route path='item/:elementId' element={<ItemDetailsContainer/>}/>
                 <Route path='cart' element={<ItemCartContainer/>}/>
                 <Route path='checkout' element={<Cart/>}/>
-                <Route path='*' element={<h1>Falso 404</h1>}/>
+                <Route path='*' element={<h1>Falso 404  <NavLink to="/">Ir a home</NavLink></h1>}/>
             </Routes>
             
         </main>
